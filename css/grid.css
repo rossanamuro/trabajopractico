@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+body{
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+header{
+  color: green;
+}
+
+
+h1 {
+  color: green;
+}
+
+h2{
+  color: green;
+}
+
+.contenedor{
+background-color: limegreen;
+display: grid;
+row-gap: 5px;
+}
+
+.item{
+padding: 20px;
+background-color:  lightgreen;
+border: 1px lime ;
+}
+
+.izquierda {
+    justify-content: start;
+    }
+    
+    
+    #c-columna-fila {
+      grid-template-columns: 100px 1fr 2fr;
+      grid-template-rows: auto 150px;
+    }
+    
+  
+    #c-linenames {
+      margin-top: 20px;
+      grid-template-columns: [col0] 150px [col1] 3fr [col2];
+      grid-template-rows: [fila0] 1fr [fila1] 4fr [fila2] 1fr [fila3];
+    }
+    
+    #header {
+      grid-column: col0/col2;
+    }
+    
+    #aside {
+      grid-row: fila1/fila3;
+    }
+    
+
+    #c-areas{
+    margin-top: 20px;
+    grid-template-columns: 200px 3fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: "cabecera cabecera" 
+    "costado ppal"
+    "costado piecero"
+    ;
+    }
+    
+    #header1 {
+    grid-area: cabecera;
+    }
+    
+    #aside1 {
+    grid-area: costado;
+    }
