@@ -1,0 +1,18 @@
+body{
+color: green;
+
+}
+
+#container {
+    overflow: hidden;
+    border-bottom: 30px black solid;
+  }
+  
+  #planta {
+    margin-top: 30px;
+    background-image: url(../);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 800px;
+  }
